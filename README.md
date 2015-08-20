@@ -23,4 +23,6 @@ Then I load the values, subject, and activity for the testing data.  I map the i
 I then repeat that for the training data and then bind the training and testing data together into a single dataset.
 
 At this point I subset the mean and standard deviation measurements using grep for std & mean. I assume that std, and mean are keywords for the relevant data.
-Establishing unique activities and subjects, I allocate a new data frame and iterate through the data to populate that data frame.
+Establishing unique activities and subjects, I allocate a new data frame for results and iterate through the columns, take the mean and populate the result data frame.
+
+This data frame is written to 'tidydata.txt'.
